@@ -21,6 +21,9 @@ Template.body.helpers({
 
     return Tasks.find({}, { sort: { createdAt: -1 } });
   },
+  viceTokenTypes() {
+    return ViceTokenTypes.find({}, { sort: { createdAt: -1 } });
+  }
 });
 
 Template.body.events({
