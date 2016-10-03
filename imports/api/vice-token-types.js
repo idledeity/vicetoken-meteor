@@ -28,12 +28,12 @@ ViceTokenTypes.schema = new SimpleSchema({
 ViceTokenTypes.insertMethod = new ValidatedMethod({
   name: 'vicetoken.tokentype.insert',
   validate: new SimpleSchema({
-    tokenTypeName: { type: String },
+    name: { type: String },
     userId: { type: String, optional: true }
   }).validator(),
-  run({ tokenTypeName, userId}) {
+  run({ name, userId}) {
     ViceTokenTypes.insert({
-      tokenTypeName, userId
+      name, userId
     });
   }
 });
