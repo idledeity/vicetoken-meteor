@@ -3,8 +3,10 @@ import { Template } from 'meteor/templating';
 import { ReactiveDict } from 'meteor/reactive-dict';
 
 import { Tasks } from '../api/tasks.js';
+import { ViceTokenTypes } from '../api/vice-token-types.js';
 
 import './task.js';
+import './vice-token-type.js';
 import './body.html';
 
 Template.body.onCreated(function bodyOnCreated() {
@@ -42,6 +44,34 @@ Template.body.events({
       owner: Meteor.userId(),
       username: Meteor.user().username,
     });
+
+    // Clear form
+    target.text.value = '';
+  },
+  'submit .new-vice-token-type'(event) {
+    // Prevent default browser form submit
+    event.preventDefault();
+
+        // Get value from form element
+    const target = event.target;
+    const text = target.text.value;
+
+    ViceTokenTypes.insertMethod.call({
+      name: text,
+    }, (err, res) => {
+      if ( err) {
+        alert(err);
+      } else {
+
+      }
+    });
+
+/*
+    // Insert a task into the collection
+    ViceTokenTypes.insert({
+      name: text,
+    });
+*/
 
     // Clear form
     target.text.value = '';
