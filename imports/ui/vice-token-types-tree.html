@@ -1,0 +1,33 @@
+
+
+<template name="viceTokenTypesTree">
+  <div class = "viceTokenTypesTree">
+    {{#each viceTokenTypesRootNodes}}
+      {{> viceTokenTypeTreeNode}}
+    {{/each}}
+  </div>
+</template>
+
+<template name="viceTokenTypeTreeNode">
+  <li>
+    <div class="viceTokenTypeTreeNode">
+        
+      <strong><span style="vertical-align:middle; height: 60px;">{{typeName}}</span></strong>
+      <form class="new-sub-type">
+        <span>
+          <input class="new-sub-type-input" type="text" name="text" placeholder="< new sub-type text >" />
+          <button class="submit" input type="submit">Add</button>
+          <button class="delete" input type="button">&times;</button>
+        </span>        
+      </form>
+
+    </div>
+
+    <ul>
+      {{#each subTypeDocs}}
+        {{> viceTokenTypeTreeNode}}
+      {{/each}}
+    </ul>
+  </li>
+
+</template>

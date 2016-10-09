@@ -1,0 +1,45 @@
+.viceTokenTypesTree {
+  position: relative;
+  border-top: #eee solid 1px;
+}
+
+.viceTokenTypesTree ul {
+  margin-left: 0px;
+  margin-right: 0px;
+
+  padding: 0px 0px 0px 0px;
+}
+
+.viceTokenTypesTree li {
+  margin-left: 0px;
+  margin-right: 0px;
+
+  padding: 0px 0px 0px 10px;
+}
+
+.viceTokenTypeTreeNode {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  width: 100%;
+  height: 18px;
+
+  padding: 10px 0px 10px 0px;
+
+  border-bottom: #eee solid 1px;
+}
+
+.viceTokenTypeTreeNode .new-sub-type {
+  margin-top: -3px;
+  margin-bottom: 0px;
+  padding-bottom: 10px;
+  position: relative;
+  float: right;
+  height: 30px;
+}
+
+.viceTokenTypeTreeNode .new-sub-type .new-sub-type-input {
+  
+}
+
