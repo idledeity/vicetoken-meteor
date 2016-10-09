@@ -7,6 +7,7 @@ import { ViceTokenTypes } from '../api/vice-token-types.js';
 
 import './task.js';
 import './vice-token-type.js';
+import './vice-token-types-tree.js';
 import './body.html';
 
 Template.body.onCreated(function bodyOnCreated() {
@@ -24,7 +25,10 @@ Template.body.helpers({
     return Tasks.find({}, { sort: { createdAt: -1 } });
   },
   viceTokenTypes() {
-    return ViceTokenTypes.find({}, { sort: { createdAt: -1 } });
+    return ViceTokenTypes.collection.find({}, { sort: { createdAt: -1 } });
+  },
+  rootViceTokenTypes() {
+    return ViceTokenTypes.collection.find({ parentTypeId: null }, { sort: { createdAt: -1 } });
   }
 });
 
@@ -52,12 +56,12 @@ Template.body.events({
     // Prevent default browser form submit
     event.preventDefault();
 
-        // Get value from form element
+    // Get value from form element
     const target = event.target;
     const text = target.text.value;
 
     ViceTokenTypes.insertMethod.call({
-      name: text,
+      typeName: text,
     }, (err, res) => {
       if ( err) {
         alert(err);
