@@ -1,191 +1,100 @@
 import { Mongo } from 'meteor/mongo';
 import { ValidatedMethod } from 'meteor/mdg:validated-method';
 
-export const ViceTokenTypes = { }
+export class ViceTokenTypeCollection {
+  // Constructor
+  constructor(typeCollectionName) {
+    // Store reference to this object for access inside methods
+    let self = this;
+
+    // Create a new Mongo collection to hold all of the tree nodes
+    this.collectionName = typeCollectionName;
+    this.collection = new Mongo.Collection(typeCollectionName);
+
+    // Create a SimpleSchema for the nodes in the tree
+    this.typeSchema = new SimpleSchema({
+      typeName: {
+        type: String,
+        //regEx: SimpleSchema.RegEx.Id,
+      },
+      userId: {
+        type: String,
+        regEx: SimpleSchema.RegEx.Id,
+        optional: true
+      },
+    });
+
+    // Meteor method to insert a new Vice Token Type into the collection
+    this.insertTypeMethod = new ValidatedMethod({
+      name: this.collectionName + '.insertType',
+      validate: this.typeSchema.validator({ clean: true }),
+      run({ typeName, userId }) {
+        return self.getCollection().insert({ typeName, userId });
+      }
+    });
+
+    // Meteor method to remove a Vice Token Type from the collection
+    this.removeTypeMethod = new ValidatedMethod({
+      name: this.collectionName + '.removeType',
+      validate: new SimpleSchema({
+        typeId: {
+          type: String,
+          //regex: SimpleSchema.RegEx.Id,
+        },
+      }).validator({ clean: true }),
+      run({ typeId }) {
+        self.getCollection().remove(typeId);
+      }
+    })
+  }
+
+  // Returns the collection containing the Vice Token Types
+  getCollection() {
+    return this.collection;
+  }
+
+  // Returns the name of the collection containing the Vice Token Type
+  getCollectionName() {
+    return this.collectionName;
+  }
+
+  // Returns the schema used for the Vice Token Types
+  getTypeSchema() {
+    return this.nodeSchema;
+  }
+
+  // Finds a node with specified id in the Vice Token Types collection
+  findNode(nodeId) {
+    return this.getCollection().findOne(nodeId);
+  }
+
+  // Public method that returns all the Vice Token Types in the collection
+  getAllNodes() {
+    return this.getCollection().find({ }, { });
+  }
+
+  // Public method that inserts a Vice Token Type into the collection
+  insertType(typeName, userId) {
+    // Call the private insert node method
+    return this.insertTypeMethod.call({ typeName, userId }, (err, res) => {
+      if (err) {
+        throw new Meteor.Error(this.insertTypeMethod.name,
+          'Failed inserting Vice Token Type into the collection: ' + err);
+      }
+    });
+  }
+
+  // Public method that removes a Vice Token Type from the collection
+  removeType(typeId) {
+    // Call the private insert node method
+    this.removeTypeMethod.call({ typeId }, (err, res) => {
+      if (err) {
+        throw new Meteor.Error(this.removeTypeMethod.name,
+          'Failed removing Vice Token Type into the collection: ' + err);
+      }
+    });
+  }
+}
 
 // Create a new Mongo collection to hold all of the Vice Token Types
-ViceTokenTypes.collection = new Mongo.Collection('vicetoken.tokentype');
-
-// Define the expected data schema for a Vice Token Type
-ViceTokenTypes.schema = new SimpleSchema({
-  typeName: {
-    type: String
-  },
-  userId: {
-    type: String,
-    regEx: SimpleSchema.RegEx.Id,
-    optional: true
-  },
-  parentTypeId: {
-    type: String,
-    regEx: SimpleSchema.RegEx.Id,
-    optional: true
-  },
-  subTypeIds: {
-    type: [String],
-    regEx: SimpleSchema.RegEx.Id,
-    defaultValue: [],
-    optional: true
-  }
-});
-
-ViceTokenTypes.insertMethod = new ValidatedMethod({
-  name: 'vicetoken.tokentype.insert',
-  validate: ViceTokenTypes.schema.validator({ clean: true }),
-  run({ typeName, userId, parentTypeId, sybTypeIds }) {
-    ViceTokenTypes.collection.insert({ typeName, userId, parentTypeId, sybTypeIds });
-  }
-});
-
-ViceTokenTypes.insertSubType = new ValidatedMethod({
-  name: 'vicetoken.tokentype.insertSubType',
-  validate: new SimpleSchema({
-    parentTypeId: {
-      type: String,
-      ///regex: SimpleSchema.RegEx.Id,
-    },
-    subType: {
-      type: ViceTokenTypes.schema,
-    },
-  }).validator({ clean: true }),
-  run({ parentTypeId, subType }) {
-    // Add the new subType to the collection
-    const subTypeId = ViceTokenTypes.collection.insert(subType);
-
-    // Set the parent of the new subType
-    ViceTokenTypes.setParent.call({
-      typeId: subTypeId,
-      parentTypeId: parentTypeId,
-    }, (err, res) => {
-      if (err) {
-        throw new Meteor.Error(name + '.setParentFailed',
-          'Error setting parent: ' + err);
-      }
-    });
-
-  }
-});
-
-ViceTokenTypes.setParent = new ValidatedMethod({
-  name: 'vicetoken.tokentype.setParent',
-  validate: new SimpleSchema({
-    typeId: {
-      type: String,
-     //regex: SimpleSchema.RegEx.Id,
-    },
-    parentTypeId: {
-      type: String,
-      //regex: SimpleSchema.RegEx.Id,
-      optional: true,
-    },
-  }).validator({ clean: true }),
-  run({ typeId, parentTypeId }) {
-    // Get the target token type
-    let targetType = ViceTokenTypes.collection.findOne(typeId);
-    if (targetType == null) {
-      throw new Meteor.Error('vicetoken.tokentype.setParent.targetNotFound',
-        'Could not find the target ViceTokenType, check that it exists.');
-    }
-
-    // Check if a valid parent type id was specified for the new parent
-    if (parentTypeId != null) {
-      // Add the target token as a subType to the new parent
-      // (we do this before anything else so we can leave the target type were it is if it fails)
-      const numUpdated = ViceTokenTypes.collection.update(parentTypeId,
-        { $addToSet: { subTypeIds: typeId } },
-        { } );
-      if (numUpdated == 0) {
-        throw new Meteor.Error('vicetoken.tokentype.setParent.noMatchingParent',
-          'No matching type found for the specified new parentTypeId, check that it exists.');
-      }
-    }
-
-    // Next up, we update the previous parent (if there is one)
-    if (targetType.parentTypeId != null) {
-      ViceTokenTypes.collection.update(
-        targetType.parentTypeId,
-        { $pullAll: { subTypeIds: [ typeId ] } },
-        { } );
-    }
-
-    // Lastly, set the parent on the taget type
-    ViceTokenTypes.collection.update(typeId,
-      { $set: { parentTypeId: parentTypeId } },
-      { } );
-  }
-});
-
-ViceTokenTypes.removeType = new ValidatedMethod({
-  name: 'vicetoken.tokentype.removeType',
-  validate: new SimpleSchema({
-    typeId: {
-      type: String,
-      //regex: SimpleSchema.RegEx.Id,
-    },
-    destroySubTypes: {
-      type: Boolean,
-      optional: true,
-    },
-    orphanSubTypes: {
-      type: Boolean,
-      optional: true,
-    }
-
-  }).validator({ clean: true }),
-  run({ typeId, destroySubTypes, orphanSubTypes }) {
-
-    // Get the target token type
-    let targetType = ViceTokenTypes.collection.findOne(typeId);
-    if (targetType == null) {
-      throw new Meteor.Error('vicetoken.tokentype.removeType.targetNotFound',
-        'Could not find the target ViceTokenType, check that it exists.');
-    }
-
-    // First, set the parent on the type being removed to 'null' to clean-up all the references
-    ViceTokenTypes.setParent.call({
-      typeId: typeId,
-      parentTypeId: null,
-    }, (err, res) => {
-      if (err) {
-        throw new Meteor.Error('vicetoken.tokentype.removeType.setParentFailed',
-          'Error setting parent: ' + err);
-      }
-    });
-
-    // Update the subTypes for the target token type
-    if (targetType.subTypeIds != null) {
-      if (destroySubTypes == false) {
-
-        // Remove all the subTypes recursively
-        targetType.subTypeIds.forEach(function(subType){
-          // Remove this subType by id
-          ViceTokenTypes.removeType.call({
-            typeId: subType,
-            destroySubTypes: true,
-          }, (err, res) => {
-            if (err) {
-              throw new Meteor.Error('vicetoken.tokentype.removeType.removeSubTypeFailed',
-                'Error removing subType from parent: ' + err);
-            }
-          });
-        });
-      } else {
-        // Update the parent id of all of the subTypes
-        targetType.subTypeIds.forEach(function(subType){
-          ViceTokenTypes.setParent.call({
-            typeId: subType,
-            parentTypeId: orphanSubTypes ? null : targetType.parentTypeId,
-          }, (err, res) => {
-            if (err) {
-              throw new Meteor.Error('vicetoken.tokentype.removeType.reparentChildFailed',
-                'Error setting parent: ' + err);
-            }
-          });
-        });
-      }
-    }
-
-    // And finally, it's safe to remove the target token type from the collection
-    ViceTokenTypes.collection.remove(typeId);
-  }
-})
+export var ViceTokenTypes = new ViceTokenTypeCollection('vicetoken.tokentype');
