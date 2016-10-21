@@ -1,16 +1,16 @@
-.viceTokenTypesTree {
+.ViceTokenTypeTree {
   position: relative;
   border-top: #eee solid 1px;
 }
 
-.viceTokenTypesTree ul {
+.ViceTokenTypeTree ul {
   margin-left: 0px;
   margin-right: 0px;
 
   padding: 0px 0px 0px 0px;
 }
 
-.viceTokenTypesTree li {
+.ViceTokenTypeTree li {
   margin-left: 0px;
   margin-right: 0px;
 

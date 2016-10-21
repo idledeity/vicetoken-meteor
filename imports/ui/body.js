@@ -4,10 +4,10 @@ import { ReactiveDict } from 'meteor/reactive-dict';
 
 import { Tasks } from '../api/tasks.js';
 import { ViceTokenTypes } from '../api/vice-token-types.js';
+import { ViceTokenTypeTreeCollection } from '../api/vice-token-type-tree.js';
 
 import './task.js';
-import './vice-token-type.js';
-import './vice-token-types-tree.js';
+import './vice-token-type-tree.js';
 import './body.html';
 
 Template.body.onCreated(function bodyOnCreated() {
@@ -27,9 +27,7 @@ Template.body.helpers({
   viceTokenTypes() {
     return ViceTokenTypes.collection.find({}, { sort: { createdAt: -1 } });
   },
-  rootViceTokenTypes() {
-    return ViceTokenTypes.collection.find({ parentTypeId: null }, { sort: { createdAt: -1 } });
-  }
+
 });
 
 Template.body.events({
@@ -60,22 +58,8 @@ Template.body.events({
     const target = event.target;
     const text = target.text.value;
 
-    ViceTokenTypes.insertMethod.call({
-      typeName: text,
-    }, (err, res) => {
-      if ( err) {
-        alert(err);
-      } else {
-
-      }
-    });
-
-/*
-    // Insert a task into the collection
-    ViceTokenTypes.insert({
-      name: text,
-    });
-*/
+    const newTypeId = ViceTokenTypes.insertType(text);
+    ViceTokenTypeTreeCollection.insertNode(newTypeId);
 
     // Clear form
     target.text.value = '';
