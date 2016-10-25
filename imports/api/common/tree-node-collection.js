@@ -165,13 +165,13 @@ export class TreeNodeCollection {
   }
 
   // Public method that returns all the tree nodes in the collection
-  getAllNodes() {
-    return this.getCollection().find({ }, { });
+  getAllNodes(options) {
+    return this.getCollection().find({ }, options);
   }
 
   // Public method that returns all tree nodes at the top of the tree hierarchy
-  getRootNodes() {
-    return this.getCollection().find({ parentNodeId: null }, { sort: { _id : 1 } });
+  getRootNodes(options) {
+    return this.getCollection().find({ parentNodeId: null }, options );
   }
 
   // Public method that inserts a tree node into the collection tree structure
