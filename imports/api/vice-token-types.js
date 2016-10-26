@@ -98,3 +98,10 @@ export class ViceTokenTypeCollection {
 
 // Create a new Mongo collection to hold all of the Vice Token Types
 export var ViceTokenTypes = new ViceTokenTypeCollection('vicetoken.tokentype');
+
+if (Meteor.isServer) {
+  // This code only runs on the server
+  Meteor.publish('viceTokenTypes', function viceTokenTypesPublication() {
+    return ViceTokenTypes.getCollection().find();
+  });
+}
