@@ -3,7 +3,7 @@ import { Template } from 'meteor/templating';
 import { ReactiveDict } from 'meteor/reactive-dict';
 
 import { ViceTokenTypes } from '../api/vice-token-types.js';
-import { ViceTokenTypeTreeCollection } from '../api/vice-token-type-tree.js';
+import { ViceTokenTypeTreeNodes } from '../api/vice-token-type-tree.js';
 
 import { DefineRelation } from '../api/client/define-relation.js';
 
@@ -16,6 +16,9 @@ Template.ViceTokenTypeTree.onCreated(function bodyOnCreated() {
   this.state.set('sortAlphaDirection', 1);
   this.state.set('sortType', "alpha");
 
+  Meteor.subscribe('viceTokenTypeTreeNodes');
+  Meteor.subscribe('viceTokenTypes');
+
   this.getTypeFindOptions = function() {
     if (this.state.get('sortType') == "alpha") {
       const direction = this.state.get('sortAlphaDirection');
@@ -23,7 +26,7 @@ Template.ViceTokenTypeTree.onCreated(function bodyOnCreated() {
     }
   }.bind(this);
 
-  DefineRelation( ViceTokenTypeTreeCollection.getCollection(), ViceTokenTypes.getCollection(), "target", "targetId");
+  DefineRelation( ViceTokenTypeTreeNodes.getCollection(), ViceTokenTypes.getCollection(), "target", "targetId");
 })
 
 Template.ViceTokenTypeTree.events({
@@ -45,7 +48,7 @@ Template.ViceTokenTypeTree.events({
 Template.ViceTokenTypeTree.helpers({
   rootViceTokenTypes() {
     const instance = Template.instance();
-    return ViceTokenTypeTreeCollection.getRootNodes(instance.getTypeFindOptions());
+    return ViceTokenTypeTreeNodes.getRootNodes(instance.getTypeFindOptions());
   },
 
   getSortAlphaIconImg() {

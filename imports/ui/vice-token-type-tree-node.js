@@ -1,7 +1,7 @@
 import { Template } from 'meteor/templating';
 
 import { ViceTokenTypes } from '../api/vice-token-types.js';
-import { ViceTokenTypeTreeCollection } from '../api/vice-token-type-tree.js';
+import { ViceTokenTypeTreeNodes } from '../api/vice-token-type-tree.js';
 
 import './vice-token-type.js';
 
@@ -19,7 +19,7 @@ Template.ViceTokenTypeTreeNode.events({
 
     // Create the new sub type
     const newTypeId = ViceTokenTypes.insertType(text);
-    ViceTokenTypeTreeCollection.insertNode(newTypeId, this.data._id);
+    ViceTokenTypeTreeNodes.insertNode(newTypeId, this.data._id);
 
     // Clear form
     target.text.value = '';
@@ -32,7 +32,7 @@ Template.ViceTokenTypeTreeNode.events({
     event.preventDefault();
 
     ViceTokenTypes.removeType(this.data.targetId);
-    ViceTokenTypeTreeCollection.removeNode(this.data._id);
+    ViceTokenTypeTreeNodes.removeNode(this.data._id);
 
     return false;
   },
@@ -42,8 +42,8 @@ Template.ViceTokenTypeTreeNode.events({
     event.preventDefault();
 
     if (this.data.parentNodeId != null) {
-      let parentNode = ViceTokenTypeTreeCollection.findNode(this.data.parentNodeId);
-      ViceTokenTypeTreeCollection.setParent(this.data._id, parentNode.parentNodeId);
+      let parentNode = ViceTokenTypeTreeNodes.findNode(this.data.parentNodeId);
+      ViceTokenTypeTreeNodes.setParent(this.data._id, parentNode.parentNodeId);
     }
 
     return false;
@@ -54,15 +54,15 @@ Template.ViceTokenTypeTreeNode.events({
     event.preventDefault();
 
     // Get the parent node of the current node
-    let parentNode = ViceTokenTypeTreeCollection.findNode(this.data.parentNodeId);
+    let parentNode = ViceTokenTypeTreeNodes.findNode(this.data.parentNodeId);
 
     // Get an array of sibling node id's based on whether we have a direct parent or not
     let nodeSiblingCollection = null;
     if (this.data.parentNodeId != null) {
       // Get the parent of this node
-      nodeSiblingCollection = ViceTokenTypeTreeCollection.getCollection().find({ _id: { $in: parentNode.childNodeIds } }, this.typeFindOptions);
+      nodeSiblingCollection = ViceTokenTypeTreeNodes.getCollection().find({ _id: { $in: parentNode.childNodeIds } }, this.typeFindOptions);
     } else {
-      nodeSiblingCollection = ViceTokenTypeTreeCollection.getRootNodes();
+      nodeSiblingCollection = ViceTokenTypeTreeNodes.getRootNodes();
     }
 
     // Extract an array of ids for all of the sibling nodes
@@ -84,7 +84,7 @@ Template.ViceTokenTypeTreeNode.events({
 
         // If we found a valid new parent id, then set it now
         if (newNodeParentId != null) {
-          ViceTokenTypeTreeCollection.setParent(this.data._id, newNodeParentId);
+          ViceTokenTypeTreeNodes.setParent(this.data._id, newNodeParentId);
         }
 
         // Already found a match, so we can stop searching
@@ -101,7 +101,7 @@ Template.ViceTokenTypeTreeNode.helpers({
   getChildNodes: function() {
     const instance = Template.instance();
     if (this.childNodeIds != null) {
-      const children = ViceTokenTypeTreeCollection.getCollection().find({ _id: { $in: this.childNodeIds } }, instance.data.typeFindOptions );
+      const children = ViceTokenTypeTreeNodes.getCollection().find({ _id: { $in: this.childNodeIds } }, instance.data.typeFindOptions );
       return children;
     }
   },
