@@ -18,7 +18,7 @@ Template.ViceTokenTypeTreeNode.events({
     const text = target.text.value;
 
     // Create the new sub type
-    const newTypeId = ViceTokenTypes.insertType(text);
+    const newTypeId = ViceTokenTypes.insertType(text, null, "image");
     ViceTokenTypeTreeNodes.insertNode(newTypeId, this.data._id);
 
     // Clear form
