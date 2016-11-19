@@ -22,14 +22,17 @@ export class ViceTokenTypeCollection {
         regEx: SimpleSchema.RegEx.Id,
         optional: true
       },
+      iconPath: {
+        type: String,
+      },
     });
 
     // Meteor method to insert a new Vice Token Type into the collection
     this.insertTypeMethod = new ValidatedMethod({
       name: this.collectionName + '.insertType',
       validate: this.typeSchema.validator({ clean: true }),
-      run({ typeName, userId }) {
-        return self.getCollection().insert({ typeName, userId });
+      run({ typeName, userId, iconPath }) {
+        return self.getCollection().insert({ typeName, userId, iconPath });
       }
     });
 
@@ -74,9 +77,9 @@ export class ViceTokenTypeCollection {
   }
 
   // Public method that inserts a Vice Token Type into the collection
-  insertType(typeName, userId) {
+  insertType(typeName, userId, iconPath) {
     // Call the private insert node method
-    return this.insertTypeMethod.call({ typeName, userId }, (err, res) => {
+    return this.insertTypeMethod.call({ typeName, userId, iconPath }, (err, res) => {
       if (err) {
         throw new Meteor.Error(this.insertTypeMethod.name,
           'Failed inserting Vice Token Type into the collection: ' + err);

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 744.09448819 1052.3622047"
+   id="svg4253"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="candy.svg"
+   inkscape:export-filename="D:\projects\revtu\meteor\vicetoken\public\images\ui\icons\categories\food\candy_icon.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <defs
+     id="defs4255" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="5.6568542"
+     inkscape:cx="9.8671012"
+     inkscape:cy="57.732853"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1600"
+     inkscape:window-height="837"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     showborder="false"
+     showguides="true" />
+  <metadata
+     id="metadata4258">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.38987347;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect5656-2-1"
+       width="111.58909"
+       height="119.99017"
+       x="0.19493674"
+       y="932.17712"
+       rx="9.0008183"
+       ry="8.5492983"
+       inkscape:export-filename="C:\Users\mattg\Desktop\candy_icon.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="opacity:1;fill:#f5b8d7;fill-opacity:1;stroke:#000000;stroke-width:0.49999997;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 83.993423,991.92869 c 0,15.47511 -12.491097,28.03361 -27.966118,28.03361 -15.47502,0 -28.073853,-12.5585 -28.073853,-28.03361 0,-15.47501 12.598844,-28.00636 28.073853,-28.00636 15.475009,0 27.966118,12.53135 27.966118,28.00636 z"
+       id="path4687"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="sssss"
+       inkscape:export-filename="C:\Users\mattg\Desktop\candy_icon.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:nodetypes="cccc"
+       inkscape:connector-curvature="0"
+       id="path4706"
+       d="m 55.973438,991.94232 c -3.787411,-8.63853 6.022166,-21.91199 21.800165,-17.44032 -2.907782,-5.24899 -12.208049,-10.23012 -19.093894,-10.43146 -12.757268,7.13229 -10.755166,23.17802 -2.706271,27.87178 z"
+       style="opacity:0.98999999;fill:#006df7;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.24999999;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-filename="C:\Users\mattg\Desktop\candy_icon.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#fcff22;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.24999999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 55.842512,964.0883 c -1.56886,-0.0201 -4.077187,0.14743 -6.216287,0.81254 -8.65542,7.85882 -4.020232,25.94547 6.519478,27.20279 -10.362933,-4.71297 -10.237234,-21.4286 -0.303191,-28.01533 z"
+       id="path4708"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="C:\Users\mattg\Desktop\candy_icon.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#ff1212;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.24999999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 55.781127,992.18391 C 41.551885,990.56746 41.720522,968.30471 47.09797,965.57772 l -3.213708,1.23454 c -5.005571,6.11652 -1.054284,26.33199 11.896865,25.37165 z"
+       id="path4152"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="C:\Users\mattg\Desktop\candy_icon.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="opacity:0.98999999;fill:#006df7;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.25;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 56.138742,991.90609 c 9.374892,1.03927 15.965253,16.17131 4.203672,27.59961 5.999653,0.1063 14.96357,-5.4574 18.580859,-11.32 0.201893,-14.61429 -14.69517,-20.90328 -22.784531,-16.27961 z"
+       id="path4187"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="C:\Users\mattg\Desktop\candy_icon.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:nodetypes="cccc"
+       inkscape:connector-curvature="0"
+       id="path4189"
+       d="m 80.326491,1005.7197 c 0.801868,-1.3486 1.910917,-3.6047 2.404466,-5.78972 -2.478228,-11.42522 -20.459326,-16.45436 -26.818045,-7.95536 9.263015,-6.61808 23.676322,1.84859 24.413579,13.74508 z"
+       style="fill:#fcff22;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-filename="C:\Users\mattg\Desktop\candy_icon.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:nodetypes="cccc"
+       inkscape:connector-curvature="0"
+       id="path4191"
+       d="m 56.025675,991.61875 c 8.514503,-11.51467 27.710297,-0.23725 27.38321,5.78325 l 0.53771,-3.40042 c -2.794275,-7.39321 -22.277024,-14.07903 -27.92092,-2.38283 z"
+       style="fill:#ff1212;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-filename="C:\Users\mattg\Desktop\candy_icon.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:nodetypes="cccc"
+       inkscape:connector-curvature="0"
+       id="path4195"
+       d="m 56.087479,992.06744 c -5.587481,7.59926 -21.987419,5.74064 -26.003839,-10.15934 -3.091871,5.14271 -2.75552,15.68754 0.513036,21.7515 12.555376,7.482 25.450336,-2.2747 25.490803,-11.59216 z"
+       style="opacity:0.98999999;fill:#006df7;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.25;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-filename="C:\Users\mattg\Desktop\candy_icon.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#fcff22;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 32.030655,1006.1078 c 0.766992,1.3688 2.16627,3.4573 3.811822,4.9772 11.133647,3.5664 24.479557,-9.4911 20.298566,-19.2474 1.099918,11.331 -13.439087,19.58 -24.110388,14.2702 z"
+       id="path4197"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="C:\Users\mattg\Desktop\candy_icon.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#ff1212;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 56.392857,992.11319 c 5.71474,13.13111 -13.649693,24.11641 -18.700054,20.82291 l 2.675998,2.1659 c 7.799847,1.2767 23.331309,-12.253 16.024056,-22.98881 z"
+       id="path4199"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="C:\Users\mattg\Desktop\candy_icon.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#dceaf1;fill-rule:evenodd;stroke:#000000;stroke-width:0.49999997;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;fill-opacity:0.5714286"
+       d="m 29.215013,1001.6004 c 1.650261,1.1095 -1.428635,-3.54898 -1.365209,-9.55611 0.06343,-6.00712 3.235412,-11.35364 1.365209,-9.42162 -4.893751,5.05549 -14.532387,-10.83493 -24.1223095,-11.95352 -2.4396736,-0.28457 2.1041157,4.91186 1.9028522,7.48635 -0.1221061,1.56193 -1.919229,2.71709 -1.8443029,4.28232 0.094818,1.98077 2.9019461,3.16274 2.8396409,5.14494 -0.061829,1.96706 -3.0239671,2.93367 -3.1323874,4.89848 -0.1196772,2.16882 2.8791866,3.61984 2.839641,5.79192 -0.036079,1.98154 -2.661601,3.19774 -2.7810917,5.17574 -0.08025,1.3285 1.4336603,2.3659 1.4344578,3.697 0.00136,2.2617 -4.5625013,6.0057 -2.4297959,6.2848 7.4738245,0.9782 20.7457475,-14.88765 25.2932955,-11.8303 z"
+       id="path4201"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ssssaaaaaaass"
+       inkscape:export-filename="C:\Users\mattg\Desktop\candy_icon.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#b4b4b4;fill-opacity:1;fill-rule:evenodd;stroke:#393939;stroke-width:0.49999997;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 9.208502,992.88948 c 6.441632,-9.83016 12.631345,2.28836 14.855602,-2.74041 0.80863,-1.8282 2.850709,2.34561 1.943132,4.12163 -2.332318,4.5641 -8.206163,-6.70164 -16.798734,-1.38122 z"
+       id="path4203"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cssc"
+       inkscape:export-filename="C:\Users\mattg\Desktop\candy_icon.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#b4b4b4;fill-opacity:1;fill-rule:evenodd;stroke:#393939;stroke-width:0.49999997;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 11.107655,995.91192 c 4.843944,-0.42131 9.721973,1.20489 12.054138,2.15485 4.637279,1.88885 -9.064077,1.97333 -9.698893,5.08793 -2.624748,-0.5901 1.700896,-3.94325 -2.355245,-7.24278 z"
+       id="path4205"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cscc"
+       inkscape:export-filename="C:\Users\mattg\Desktop\candy_icon.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:nodetypes="ccc"
+       inkscape:connector-curvature="0"
+       id="path4207"
+       d="m 24.015153,986.73381 c -2.264802,1.46586 -7.685446,-2.45626 -13.330599,-3.54666 -2.1285486,-10.45607 7.66375,0.54164 13.330599,3.54666 z"
+       style="fill:#b4b4b4;fill-opacity:1;fill-rule:evenodd;stroke:#393939;stroke-width:0.49999997;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-filename="C:\Users\mattg\Desktop\candy_icon.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:nodetypes="ssssaaaaaaass"
+       inkscape:connector-curvature="0"
+       id="path4209"
+       d="m 82.778365,1001.6004 c -1.650261,1.1095 1.428634,-3.54898 1.365208,-9.55611 -0.06343,-6.00712 -3.235411,-11.35364 -1.365208,-9.42162 4.893751,5.05549 14.532387,-10.83493 24.122265,-11.95352 2.43967,-0.28457 -2.10411,4.91186 -1.90285,7.48635 0.1221,1.56193 1.91923,2.71709 1.8443,4.28232 -0.0948,1.98077 -2.90192,3.16274 -2.83962,5.14494 0.0619,1.96706 3.02394,2.93367 3.13236,4.89848 0.11968,2.16882 -2.87916,3.61984 -2.83962,5.79192 0.0361,1.98154 2.66159,3.19774 2.78107,5.17574 0.0803,1.3285 -1.43366,2.3659 -1.43446,3.697 -0.002,2.2617 4.56251,6.0057 2.4298,6.2848 -7.47377,0.9782 -20.745697,-14.88765 -25.293245,-11.8303 z"
+       style="fill:#dceaf1;fill-rule:evenodd;stroke:#000000;stroke-width:0.49999997;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;fill-opacity:0.5714286"
+       inkscape:export-filename="C:\Users\mattg\Desktop\candy_icon.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:nodetypes="cssc"
+       inkscape:connector-curvature="0"
+       id="path4211"
+       d="m 103.40781,992.88948 c -6.441609,-9.83016 -12.631323,2.28836 -14.855579,-2.74041 -0.80863,-1.8282 -2.85071,2.34561 -1.943133,4.12163 2.33232,4.5641 8.206164,-6.70164 16.798712,-1.38122 z"
+       style="fill:#b4b4b4;fill-opacity:1;fill-rule:evenodd;stroke:#393939;stroke-width:0.49999997;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-filename="C:\Users\mattg\Desktop\candy_icon.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:nodetypes="cscc"
+       inkscape:connector-curvature="0"
+       id="path4213"
+       d="m 101.50868,995.91192 c -4.843944,-0.42131 -9.721974,1.20489 -12.054138,2.15485 -4.637278,1.88885 9.064078,1.97333 9.698894,5.08793 2.624754,-0.5901 -1.700897,-3.94325 2.355244,-7.24278 z"
+       style="fill:#b4b4b4;fill-opacity:1;fill-rule:evenodd;stroke:#393939;stroke-width:0.49999997;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-filename="C:\Users\mattg\Desktop\candy_icon.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#b4b4b4;fill-opacity:1;fill-rule:evenodd;stroke:#393939;stroke-width:0.49999997;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 88.601181,986.73381 c 2.264802,1.46586 7.685448,-2.45626 13.330599,-3.54666 2.12852,-10.45607 -7.66375,0.54164 -13.330599,3.54666 z"
+       id="path4215"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccc"
+       inkscape:export-filename="C:\Users\mattg\Desktop\candy_icon.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+  </g>
+</svg>

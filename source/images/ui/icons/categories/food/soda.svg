@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 744.09448819 1052.3622047"
+   id="svg4253"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="soda.svg"
+   inkscape:export-filename="D:\projects\revtu\meteor\vicetoken\public\images\ui\icons\categories\food\steak_icon.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <defs
+     id="defs4255">
+    <marker
+       inkscape:stockid="Arrow2Send"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow2Send"
+       style="overflow:visible;"
+       inkscape:isstock="true">
+      <path
+         id="path4931"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round;stroke:#000000;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         transform="scale(0.3) rotate(180) translate(-2.3,0)" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1"
+     inkscape:cx="-865.25127"
+     inkscape:cy="744.79817"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1600"
+     inkscape:window-height="837"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     showguides="true" />
+  <metadata
+     id="metadata4258">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Border"
+     inkscape:groupmode="layer"
+     id="layer1"
+     style="display:inline">
+    <rect
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.38987347;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect5656-2-1"
+       width="111.58909"
+       height="119.99017"
+       x="-803.5285"
+       y="187.59694"
+       rx="9.0008183"
+       ry="8.5492983"
+       inkscape:export-filename="D:\projects\revtu\meteor\vicetoken\public\images\ui\icons\categories\food\soda_icon.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#9ed7fe;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m -772.65176,211.36819 c 0.0799,1.89141 0.21461,2.39479 -0.88805,4.2822 0.043,20.3542 0.1291,72.74714 0.1291,72.74714 4.00077,9.7437 48.02765,8.63881 50.34767,0.5164 0,0 -0.005,-52.77373 0.0378,-72.99887 -1.54827,-1.76734 -1.49851,-2.7501 -0.58284,-4.2132 -11.72075,9.75609 -48.57534,5.22891 -49.0437,-0.33367 z"
+       id="path7101"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccc"
+       inkscape:export-filename="D:\projects\revtu\meteor\vicetoken\public\images\ui\icons\categories\food\soda_icon.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#dbdde2;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m -771.84376,290.78221 c 0.59793,1.03456 1.32238,2.94413 1.46057,3.9787 8.44744,5.36791 35.98777,5.30937 44.09067,0.36513 0,0 0.37923,-2.70774 2.00828,-4.34383 -15.85318,5.90025 -31.70633,5.97653 -47.55952,0 z"
+       id="path7103"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="D:\projects\revtu\meteor\vicetoken\public\images\ui\icons\categories\food\soda_icon.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#fa104d;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -769.78492,238.01132 c -1.91178,-0.2822 -1.82884,4.12394 0.0768,4.46575 12.40592,2.22521 30.3346,0.0977 40.81867,-11.5548 5.07347,-5.63891 -5.09576,-6.59405 -8.02115,-4.45845 -6.76249,4.93678 -9.89732,14.93919 -32.87436,11.5475 z"
+       id="path7127"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="sssss"
+       inkscape:export-filename="D:\projects\revtu\meteor\vicetoken\public\images\ui\icons\categories\food\soda_icon.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -769.78557,245.11059 c -0.80162,-0.21366 -2.69157,0.47111 -0.92998,2.00417 2.99452,2.60604 26.2777,2.52701 40.81588,-8.34791 5.53462,-4.14003 3.88991,-7.28534 0.32933,-3.70426 -11.52781,11.59418 -33.40769,11.86245 -40.21523,10.048 z"
+       id="path7129"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="sssss"
+       inkscape:export-filename="D:\projects\revtu\meteor\vicetoken\public\images\ui\icons\categories\food\soda_icon.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text6850"
+       style="font-style:normal;font-weight:normal;font-size:180px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:-0.49999991px;writing-mode:lr-tb;fill:#103dfa;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       xml:space="preserve"
+       x="-770.77142"
+       y="284.4599"
+       inkscape:export-filename="D:\projects\revtu\meteor\vicetoken\public\images\ui\icons\categories\food\soda_icon.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:11.25px;font-family:'Sitka Subheading';-inkscape-font-specification:'Sitka Subheading Bold';letter-spacing:0px;word-spacing:-0.49999991px;writing-mode:lr-tb;fill:#103dfa;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+   id="tspan6852"
+   dx="0.059999999 0.30000001"
+   rotate="0 0 0">Fun Cola</tspan></text>
+    <text
+       y="283.86526"
+       x="-770.06439"
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:180px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:-0.49999991px;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;"
+       id="text6908"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="D:\projects\revtu\meteor\vicetoken\public\images\ui\icons\categories\food\soda_icon.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+   rotate="0 0 0"
+   dx="0.059999999 0.30000001"
+   id="tspan6910"
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:11.25px;font-family:'Sitka Subheading';-inkscape-font-specification:'Sitka Subheading Bold';letter-spacing:0px;word-spacing:-0.49999991px;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;">Fun Cola</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text6912"
+       style="font-style:normal;font-weight:normal;font-size:180px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:-0.49999991px;writing-mode:lr-tb;fill:#fa104d;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       xml:space="preserve"
+       x="-769.28412"
+       y="283.35904"
+       inkscape:export-filename="D:\projects\revtu\meteor\vicetoken\public\images\ui\icons\categories\food\soda_icon.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:11.25px;font-family:'Sitka Subheading';-inkscape-font-specification:'Sitka Subheading Bold';letter-spacing:0px;word-spacing:-0.49999991px;writing-mode:lr-tb;fill:#fa104d;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+   id="tspan6914"
+   dx="0.059999999 0.30000001"
+   rotate="0 0 0">Fun Cola</tspan></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer6"
+     inkscape:label="Wheat">
+    <ellipse
+       style="display:inline;opacity:0.94599998;fill:#dbdde2;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path7097"
+       cx="-748.10968"
+       cy="210.57918"
+       rx="25.012102"
+       ry="6.7550936"
+       inkscape:export-filename="D:\projects\revtu\meteor\vicetoken\public\images\ui\icons\categories\food\soda_icon.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#5e6474;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.28868139;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m -768.37171,209.11595 c -1.70861,0.57998 -2.25384,1.78125 -0.10851,2.5522 2.14531,0.77095 13.71752,2.66127 16.87636,1.8619 1.97621,-0.50009 1.60167,-7.00733 -0.43389,-6.87595 -9.9089,0.63947 -14.02337,1.67753 -16.33396,2.46185 z"
+       id="path7106"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="sssss"
+       inkscape:export-filename="D:\projects\revtu\meteor\vicetoken\public\images\ui\icons\categories\food\soda_icon.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="opacity:0.94599998;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m -736.51194,199.22735 c -0.5714,3.10599 -4.33586,6.35064 -8.88039,9.81385 -4.54447,3.46319 -8.05999,5.35465 -7.57669,2.72751 0.59239,-3.22002 4.33621,-6.35223 8.88036,-9.81383 4.54425,-3.46183 8.1305,-5.73772 7.57672,-2.72753 z"
+       id="path7108"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="sssss"
+       inkscape:transform-center-x="2.3573596"
+       inkscape:transform-center-y="-2.9656996"
+       inkscape:export-filename="D:\projects\revtu\meteor\vicetoken\public\images\ui\icons\categories\food\soda_icon.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m -749.13021,206.11759 c 5.85737,-4.10609 5.81575,0.69822 -1.32341,6.30657"
+       id="path7113"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:transform-center-x="5.3020959"
+       inkscape:transform-center-y="0.12296157"
+       inkscape:export-filename="D:\projects\revtu\meteor\vicetoken\public\images\ui\icons\categories\food\soda_icon.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <ellipse
+       style="opacity:0.94599998;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1.98510444;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path7115"
+       cx="-1039.5514"
+       cy="-428.12683"
+       rx="0.51684803"
+       ry="0.55079848"
+       transform="matrix(0.7953713,-0.60612251,-0.18093221,0.98349557,0,0)"
+       inkscape:transform-center-x="6.9907487"
+       inkscape:transform-center-y="0.6562969"
+       inkscape:export-filename="D:\projects\revtu\meteor\vicetoken\public\images\ui\icons\categories\food\soda_icon.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#103dfa;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -767.01947,254.05116 c 14.83375,10.50038 -1.31319,12.58607 0.8054,17.63049 23.63413,-9.776 11.57322,-13.75085 10.77401,-15.09875 -0.4996,-0.84257 5.78775,0.67609 25.48938,-8.00531 5.69608,-2.50993 5.8402,-10.88754 3.21494,-8.92121 -27.06303,20.27043 -52.59642,6.03814 -40.28373,14.39478 z"
+       id="path7125"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccsssc"
+       inkscape:export-filename="D:\projects\revtu\meteor\vicetoken\public\images\ui\icons\categories\food\soda_icon.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Loaf"
+     style="display:inline;opacity:1" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Slice"
+     style="display:inline" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer5"
+     inkscape:label="Slice Front" />
+</svg>
