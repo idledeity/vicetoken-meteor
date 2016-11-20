@@ -8,7 +8,7 @@
   <div class = "ViceTokenTypeTree">
     {{#each rootViceTokenTypes}}
       <!-- Pass the find option for ViceToken types from the ViceToken type tree, so subTypes can be sorted as well -->
-      {{> ViceTokenTypeTreeNode data=this typeFindOptions=getTypeFindOptions}}
+      {{ > ViceTokenTypeTreeNode data=this typeFindOptions=getTypeFindOptions}}
     {{/each}}
   </div>
 </template>
