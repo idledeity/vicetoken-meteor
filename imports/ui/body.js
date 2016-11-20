@@ -3,11 +3,11 @@ import { Template } from 'meteor/templating';
 import { ReactiveDict } from 'meteor/reactive-dict';
 
 import { Tasks } from '../api/tasks.js';
-import { ViceTokenTypes } from '../api/vice-token-types.js';
-import { ViceTokenTypeTreeNodes } from '../api/vice-token-type-tree.js';
+import { ViceTokenTypes } from '../api/vice-token-type/vice-token-types.js';
+import { ViceTokenTypeTreeNodes } from '../api/vice-token-type/vice-token-type-tree.js';
 
 import './task.js';
-import './vice-token-type-tree.js';
+import './vice-token-type/vice-token-type-tree.js';
 import './body.html';
 
 Template.body.onCreated(function bodyOnCreated() {
@@ -58,7 +58,7 @@ Template.body.events({
     const target = event.target;
     const text = target.text.value;
 
-    const newTypeId = ViceTokenTypes.insertType(text, null, "a");
+    const newTypeId = ViceTokenTypes.insertType(text, null, "");
     ViceTokenTypeTreeNodes.insertNode(newTypeId);
 
     // Clear form

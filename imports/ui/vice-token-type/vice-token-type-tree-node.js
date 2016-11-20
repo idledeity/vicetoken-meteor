@@ -1,7 +1,7 @@
 import { Template } from 'meteor/templating';
 
-import { ViceTokenTypes } from '../api/vice-token-types.js';
-import { ViceTokenTypeTreeNodes } from '../api/vice-token-type-tree.js';
+import { ViceTokenTypes } from '../../api/vice-token-type/vice-token-types.js';
+import { ViceTokenTypeTreeNodes } from '../../api/vice-token-type/vice-token-type-tree.js';
 
 import './vice-token-type.js';
 

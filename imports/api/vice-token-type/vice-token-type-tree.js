@@ -1,5 +1,5 @@
 
-import { TreeNodeCollection } from './common/tree-node-collection.js';
+import { TreeNodeCollection } from '../common/tree-node-collection.js';
 
 export var ViceTokenTypeTreeNodes = new TreeNodeCollection('vicetoken.tokentype.treenodes');
 

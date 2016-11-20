@@ -2,10 +2,10 @@ import { Meteor } from 'meteor/meteor';
 import { Template } from 'meteor/templating';
 import { ReactiveDict } from 'meteor/reactive-dict';
 
-import { ViceTokenTypes } from '../api/vice-token-types.js';
-import { ViceTokenTypeTreeNodes } from '../api/vice-token-type-tree.js';
+import { ViceTokenTypes } from '../../api/vice-token-type/vice-token-types.js';
+import { ViceTokenTypeTreeNodes } from '../../api/vice-token-type/vice-token-type-tree.js';
 
-import { DefineRelation } from '../api/client/define-relation.js';
+import { DefineRelation } from '../../api/client/define-relation.js';
 
 import './vice-token-type-tree-node.js';
 
