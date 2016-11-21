@@ -18,13 +18,13 @@
 }
 
 .ViceTokenTypeTreeHeader {
-  height: 30px;
+  height: 40px;
+  vertical-align: middle;
 }
 
 .ViceTokenTypeTreeOptions {
   position: relative;
   float: right;
-  height: 30px;
   padding-right: 10px;
 }
 
@@ -51,6 +51,9 @@
 }
 
 .ViceTokenTypeTreeNode .new-sub-type .new-sub-type-input {
-  
+
 }
 
+.ViceTokenTypeTreeThumbnails {
+  padding: 10px 10px 10px 10px;
+}

@@ -1,14 +1,24 @@
 <template name="ViceTokenTypeTree">
   <div class="ViceTokenTypeTreeHeader">
     <div class="ViceTokenTypeTreeOptions">
-        <img class="ViceTokenTypeTreeSortAlpha" src="{{getSortAlphaIconImg}}">
+      <img class="ViceTokenTypeTreeViewType" src={{getTreeViewTypeIconImg}}>
+      <img class="ViceTokenTypeTreeSortAlpha" src="{{getSortAlphaIconImg}}">
     </div>
   </div>
 
-  <div class = "ViceTokenTypeTree">
-    {{#each rootViceTokenTypes}}
-      <!-- Pass the find option for ViceToken types from the ViceToken type tree, so subTypes can be sorted as well -->
-      {{ > ViceTokenTypeTreeNode data=this typeFindOptions=getTypeFindOptions}}
-    {{/each}}
+  <div class="ViceTokenTypeTree">
+    {{#if getTreeViewThumbnails}}
+      <div class="ViceTokenTypeTreeThumbnails">
+      {{#each viewThumbnailChildren}}
+        {{> ViceTokenTypeTreeNodeThumbnail}}
+      {{/each}}
+      <div style="clear: both;"></div>
+      </div>
+    {{else}}
+      {{#each rootViceTokenTypes}}
+        <!-- Pass the find option for ViceToken types from the ViceToken type tree, so subTypes can be sorted as well -->
+        {{> ViceTokenTypeTreeNode data=this typeFindOptions=getTypeFindOptions}}
+      {{/each}}
+    {{/if}}
   </div>
 </template>
